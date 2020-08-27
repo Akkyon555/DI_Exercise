@@ -1,0 +1,99 @@
+* {
+	font-family: 'Exo 2', sans-serif;
+	margin: 0px;
+}
+
+.content {
+	width: 100%
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-wrapper{
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-wrapper h1 {
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+.form-container{
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+}
+
+.in {
+	width: 300px;
+	height: 30px;
+}
+
+.remember-me, input, p, a {
+	display: flex;
+	margin: 5px;
+}
+
+.login{
+	width: 200px;
+}
+
+.icon-wrap {
+	display: flex;
+}
+
+.icon-wrap > a{
+	text-decoration: none;
+}
+
+
+.register-wrapper {
+	width: 50%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

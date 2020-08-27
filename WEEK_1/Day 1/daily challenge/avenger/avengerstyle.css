@@ -1,0 +1,71 @@
+body {
+	background-image: url(doctorbg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: 'Marvel', sans-serif;
+	margin: 0px;
+  min-height: 100%;
+}
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: right;
+  color: red;
+  text-align: center;
+  padding: 5px;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;s
+}
+
+.header .logo-avengers{
+	flex-direction: flex;
+ 	height: 100px;
+ 	width: 300px;
+  position: relative;
+  top: 20px;
+}
+
+.pagecontainer {
+  position: relative;
+  min-height: 100vh;
+}
+
+.pagecontainer .about-text {
+  color: red;
+  background-color: #DAC7C7;
+	width: 300px;
+  border: 5px solid red;
+ 	padding: 20px;
+  padding-bottom: 2.5rem;
+  margin: 20px;
+	display:flex;
+	text-align: center;
+  position: relative;
+  top:350px;
+  left: 130px;
+}
+
+
+
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  
+}
+
+
+
+

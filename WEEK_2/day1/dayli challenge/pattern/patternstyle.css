@@ -1,0 +1,25 @@
+body {
+  padding: 30px;
+  margin: 0px;
+}
+
+.card {
+  padding: 0;
+  width: 300px;
+  height: 150px;
+}
+
+.bg1 {
+  background-color: #e66464;
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      rgba(255, 255, 255, 0.5) 50%),
+    linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0.5) 50%);
+  background-size: 20px 20px;
+}
+
+.bg2 {
+  background-color: 
+}
+

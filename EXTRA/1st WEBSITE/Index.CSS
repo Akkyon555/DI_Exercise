@@ -1,0 +1,12 @@
+h1{
+	color: red;
+}
+
+li{
+	display: inline-block;
+}
+
+body{
+	background-image:url(https://hunter-water.imgix.net/assets/src/uploads/images/2888280_water_drop_Large.jpg?auto=compress%2C%20format&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&q=80);
+	background-size: cover;
+}

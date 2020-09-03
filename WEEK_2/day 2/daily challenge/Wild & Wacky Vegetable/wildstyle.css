@@ -1,0 +1,27 @@
+body {
+	margin: 0px;
+
+}
+
+.page-wrapper {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: minmax(auto, 50%) 1fr 1fr;
+	grid-template-areas: 
+		'nav main main main'
+		'nav table table table'
+		'nav image image image'
+		'nav info info info'
+}
+
+.images {
+	display: flex;
+	justify-content: space-around;
+}
+
+img {
+	height: 200px;
+	margin: 5px;
+	padding: 5px;
+}
+

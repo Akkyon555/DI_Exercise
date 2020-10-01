@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		// var sum= 0;
+
+		// function multipleof23(number){
+		// 	for(var i = 1; i < number; i++){
+		// 		if((i % 23 == 0)){
+		// 			sum = sum + i
+		// 		}
+		// 	}
+		// 	return sum;
+		// }
+		// console.log(multipleof23(500));
+
+		function hotelcost(){
+			var night = prompt("How many night do you like to stay in this hotel?")
+			var cost = Number(night)*140
+			return cost;
+		}
+		
+		var place = {
+			"london": 183,
+			"Paris": 220,
+			"Other": 330,
+		}
+
+		function planeridecost(){
+			var destination = prompt("What is your destination?")
+			if (place[destination]){
+				return place[destination] 
+			}
+			else {
+				return place["Other"]
+			}
+		}
+
+		function rentalcarcost(){
+			var numberofday = prompt("How many days would you like to rent a car?")
+			var cost = Number(numberofday)*40
+			if (numberofday > 10){
+				cost = cost*0.95
+			}
+			return cost
+		}
+
+		function totalvacationcost(){
+			var total = hotelcost()+planeridecost()+rentalcarcost()
+			console.log(total)
+		}
+
+		totalvacationcost()
+
+
+
+	</script>
+
+</body>
+</html>

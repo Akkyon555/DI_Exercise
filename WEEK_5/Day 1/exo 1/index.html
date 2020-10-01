@@ -1,0 +1,173 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Volume of a Sphere</title> 
+        <style>  
+            body{padding-top:30px;} 
+            label,input{display:block;}  
+        </style> 
+    </head> 
+    <body> 
+        <p>Input radius value and get the volume of a sphere.</p> 
+        <form  id="MyForm"> 
+            <label for="radius">Radius</label><input type="text" name="radius" id="radius" required> 
+            <label for="volume">Volume</label><input type="text" name="volume" id="volume"> 
+            <input type="submit" value="Calculate" id="submit">    
+        </form> 
+        <script>
+        	let button = document.querySelector('#submit');
+
+        	function volumeOfASphere () {
+        		let radius = document.getElementById('radius').value;
+        		let volume;
+
+
+        		radius = Math.abs(radius);
+        		volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+        		console.log(volume);
+
+        		document.getElementById('volume').value = volume;
+        		return false;
+        	}
+
+        	window.onload = document.getElementById('MyForm').onsubmit = volumeOfASphere;
+        </script>
+    </body> 
+</html> 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<article>
+	    <h1> Some Facts </h1>
+	    <h2> The CHOCOLATE </h2>
+	    <p>Chocolate is made from tropical Theobroma cacao tree seeds. Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+	    <p> After the European discovery of the Americas, chocolate became very popular in the wider world, and its demand exploded. </p>
+	    <p> Chocolate has since become a popular food product that millions enjoy every day, thanks to its unique, rich, and sweet taste.</p> 
+	    <p> But what effect does eating chocolate have on our health?</p> 
+	</article>
+
+	<label>What is your name?</label><input type="text" name="userName">
+	<label>What did you think of the article?</label><input type="text" name="questionToUser">
+
+	<script>
+		let para = document.getElementsByTagName('p');
+		
+
+		for (var i = 0; i < para.length; i++) {
+			para[i].classList.add('para_article');
+		}
+		let article = document.querySelector('article');
+		
+		let lastPara = article.lastElementChild;
+		lastPara.remove();
+
+		let titleH2 = document.querySelector('h2');
+		
+		titleH2.addEventListener('click', removeTitle);
+		function removeTitle () {
+			titleH2.remove();
+		}
+
+		let bigTitle = document.querySelector('h1')
+		let numPx = Math.random()*100;
+		bigTitle.style.fontSize = numPx + 'px';
+
+		let firstPara = article.childNodes[5];
+		firstPara.addEventListener('click', hidePara);
+		function hidePara () {
+			firstPara.remove();
+		}
+
+
+		let secondPara = article.childNodes[7];
+		secondPara.addEventListener('click', delayClick);
+		function delayClick () {
+			setInterval(function () {
+				if (!secondPara.style.opacity) {
+                     secondPara.style.opacity = 1;
+				} 
+				if (secondPara.style.opacity > 0) {
+                     secondPara.style.opacity -= 1;
+				} else {
+					clearInterval();
+				}
+			}, 2000);
+		}
+
+		
+		let newButton = document.createElement('button');
+		newButton.innerHTML = 'Submit';
+		document.body.appendChild(newButton);
+		/*let nameInput = document.getElementsByTagName('input')[0].value;
+		let opinionInput = document.getElementsByTagName('input')[1].value;*/
+
+		newButton.addEventListener('click', getInfo);
+		function getInfo () {
+			let nameInput = document.getElementsByTagName('input')[0].value;
+			let opinionInput = document.getElementsByTagName('input')[1].value;
+			let table = document.createElement('div');
+			document.body.appendChild(table);
+			table.innerHTML = "<table border='1'" + 
+			'<tr>' + '<th>name</th>' + '<th>Opinion</th>' + '</tr>'  +
+			'<tr>' + `<td>${nameInput}</td>` + `<td>${opinionInput}</td>` + '</tr>';
+
+
+
+			
+		}
+		
+
+	</script> -->
+
+<!-- 	<script>
+		let beerSongFunction = (() => {
+			let beerNum = parseInt(prompt('How many beers You want?'));
+			if (beerNum === 0) {
+				console.log('You haven\'t beer :(');
+				return;
+			}
+			for (let i = 0; i < beerNum; i--) {
+				console.log(`${beerNum}  bottles of beer on the wall`);
+				console.log(`${beerNum}  bottles of beer`);
+				console.log(`Take 1 down, pass it around`);
+				beerNum = beerNum - 1;
+				if (beerNum === 0) {
+					console.log('You finish all beer :(');
+					return;
+				}
+			}
+		});
+		beerSongFunction();
+	</script>	 -->		
+<!-- <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+
+	<script>
+		
+
+		document.body.style.fontSize = '8em';
+		let div = document.querySelector('div');
+		div.style.background = 'lightblue';
+		div.style.padding = '100px';
+
+		if (div.style.background === 'lightblue') {
+			alert('Hello John and Pete');
+		}
+
+		let ul = document.querySelector('ul');
+		ul.childNodes[1].remove();
+
+		ul.childNodes[2].style.border = '1px dashed black';
+		
+	</script> -->
+</body>
+</html>

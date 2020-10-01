@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+<!-- 	<div id="navBar">
+	    <ul>
+	        <li><a href="#">Profile</a></li>
+	        <li><a href="#">Home</a></li>
+	        <li><a href="#">My Friends</a></li>
+	        <li><a href="#">Messenger</a></li>
+	        <li><a href="#">My Pics</a></li>
+	    </ul>
+	</div> -->
+
+
+	<div id="container">Users:</div>
+	  <ul class="list">
+	    <li>John</li>
+	    <li>Pete</li>
+	  </ul>
+	  <ul class="list">
+	    <li>David</li>
+	    <li>Sarah</li>
+	    <li>Dan</li>
+	  </ul>
+	<script>
+
+
+		/*exc1*/
+	/*	let navBar = document.querySelector('#navBar');
+		navBar.setAttribute('id', 'socialNetworkNavigation');
+		/*console.log(navBar);*/
+/*		let ul = document.querySelector('ul');
+		let newLi = document.createElement('li');
+		let newA = document.createElement('a');
+		newA.innerHTML = 'Logout';
+		newA.href = '#';
+		newLi.appendChild(newA);*/
+		/*console.log(newLi);*/
+	/*	ul.appendChild(newLi);
+
+		let first = document.querySelector('ul>li');
+		let last = ul.lastChild;
+		console.log(first);
+		console.log(last);
+
+		navBar.appendChild(first);
+		navBar.appendChild(last);
+*/
+
+
+
+
+		/*exc2*/
+		let block = document.querySelector('#container');
+		console.log(block);
+		let newName = document.createTextNode('Richard');
+		let list = document.querySelector('ul.list');
+		let Pete = list.childNodes[3];
+		Pete.innerHTML = '';
+		Pete.innerHTML = 'Richard';
+
+
+
+		let secondUl = document.getElementsByTagName('ul')[1];
+
+		console.log(secondUl);
+		firstName = list.childNodes[1];
+		firstName.innerHTML = 'Alex';
+		secondUl.firstElementChild.innerHTML = 'Alex';
+
+		let liOne = document.createElement('li');
+		liOne.innerHTML = 'Hey students';
+		let liSecond = document.createElement('li');
+		liSecond.innerHTML = 'Hey students';
+		list.appendChild(liOne);
+		secondUl.appendChild(liSecond);
+		secondUl.childNodes[3].remove();
+
+		let uls = document.getElementsByTagName('ul');
+		for (var i = 0; i < uls.length; i++) {
+			uls[i].classList.remove('list');
+			uls[i].className = 'student_list';
+		}
+		list.className = 'university';
+
+
+
+
+		
+
+
+
+/*exc3*/
+/*let logo = document.getElementById('#logo-doodle-image')
+console.log(logo)
+let logo = document.getElementById('logo-doodle-image')
+console.log(logo)
+logo.style.backgroundColor = 'blue'
+logo.setAttribute('src', 'https://www.northstar-alliance.org/wp-content/uploads/2019/08/insta-logo.png')
+let a = document.querySelector('.gb_g')
+console.log(a)*/
+
+		
+
+		
+
+
+
+
+
+
+
+
+
+		/*alert('sdsd');
+		let arrayOfNumbers = [5,0,9,1,7,4,2,6,3,8];
+		let sort = (arr => {
+			for(let i = 0; i < arr.length - 1; i++) {
+				for (let x = i + 1; x < arr.length; x++) {
+					if(arr[i] > arr[x]) {
+						let tmp = arr[i];
+						arr[i] = arr[x];
+						arr[x] = tmp;
+					}
+				}
+			}
+			console.log(arr);
+		});
+		sort(arrayOfNumbers);*/
+	</script>
+</body>
+</html>

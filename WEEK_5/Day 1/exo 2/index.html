@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stars Hello World</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	function frame(){
+	// let userWords = prompt("Please imput at least three words, each separated with \",\" !");
+	let userWords = prompt("Please imput at least three words!");
+    let arrayWords = userWords.split(" ");
+    let border = "*".repeat(userWords.length)
+	console.log(border);
+	for(let word of arrayWords){
+        console.log("*" + " " + word + " ".repeat(userWords.length - word.length - 3) + "*");
+	}
+	console.log(border);
+}
+frame();
+</script>
+</body>
+</html>
